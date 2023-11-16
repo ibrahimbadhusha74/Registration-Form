@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    overflow-x: hidden;
+}
+
+.aa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5%;
+
+}
+
+.first {
+    background-color: white;
+    width: 50%;
+    position: relative;
+    right: -25%;
+    margin-top: 4.5%;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+input {
+    height: 25px;
+}
+
+::placeholder {
+    padding-left: 10px;
+}
+
+.head {
+    margin-left: 36.9px;
+}
+
+.head1 {
+    margin-left: 40px;
+}
+
+button {
+    height: 37px;
+    width: 150px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.head h1::after {
+    position: absolute;
+    content: "";
+    top: 9%;
+    right: 85.6%;
+    width: 39.5px;
+    height: 3px;
+    background: blue;
+}
+
+.colr {
+    color: grey;
+}
+
+
+@media screen and (max-width:600px) {
+    .aa {
+        display: grid;
+        grid-template-columns: repeat(1fr 1fr);
+    }
+
+    .head ::after {
+        display: none;
+    }
+
+    .first {
+        width: 340px;
+        position: relative;
+        left: 17px;
+        top: -8px;
+
+    }
+
+    input {
+        width: 200px;
+        border: 1px solid black;
+    }
+
+}
+
+@media screen and (max-width:1000px) and (min-width:600px) {
+    .first {
+        width: 820px;
+        position: relative;
+        left: 10px;
+        top: -20px;
+    }
+
+    .head ::after {
+        display: none;
+    }
+
+
+}

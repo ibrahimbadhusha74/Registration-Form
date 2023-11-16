@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <div class="first">
+            <div class="head">
+                <label for="">
+                    <h1>Registration</h1>
+                </label><br><br>
+
+                <h2 class="colr">Personal Details</h2>
+            </div>
+            <div class="aa">
+                <div class="own">
+                    <label for="">FullName <br></label>
+                    <input type="text" id="name" name="name" placeholder="enter fullname">
+                </div>
+                <div class="own">
+                    <label for="">DOB <br></label>
+                    <input type="text" id="date" name="date" placeholder="Enter Birth Date">
+                </div>
+                <div class="own">
+                    <label for="">Email <br></label>
+                    <input type="text" id="email" name="email" placeholder="Enter Your email">
+                </div>
+            </div>
+            <div class="aa">
+                <div class="own">
+                    <label for="">MOB <br></label>
+                    <input type="text" id="mob" name="mob" placeholder="Enter Mobile Number">
+                </div>
+                <div class="own">
+                    <label for=""> Gender <br></label>
+                    <input type="text" id="sex" name="sex" placeholder="Enter Your Gender">
+                </div>
+                <div class="own">
+                    <label for="">Occupation <br></label>
+                    <input type="text" id="work" name="work" placeholder="Enter Occupation">
+                </div>
+            </div>
+            <div class="head">
+                <h3 class="colr">Identity Details</h3>
+            </div>
+            <div class="aa">
+                <div class="own">
+                    <label for="">ID Type <br></label>
+                    <input type="text" id="idt" name="idt" placeholder="Enter ID Type">
+                </div>
+                <div class="own">
+                    <label for="">ID Number <br></label>
+                    <input type="text" id="idn" name="idn" placeholder="Enter ID Number">
+                </div>
+                <div class="own">
+                    <label for="">Issue Authority <br></label>
+                    <input type="text" id="ia" name="ia" placeholder="Enter Issue Department">
+                </div>
+            </div>
+            <div class="aa">
+                <div class="own">
+                    <label for="">Issue Date <br></label>
+                    <input type="text" id="id" name="id" placeholder="Enter ID Issue Date">
+                </div>
+                <div class="own">
+                    <label for="">Issue State <br></label>
+                    <input type="text" id="is" name="is" placeholder="Enter ID Issue State">
+                </div>
+                <div class="own">
+                    <label for="">Expiry Date <br></label>
+                    <input type="text" id="ed" name="ed" placeholder="Enter ID Expiry Date">
+                </div>
+            </div>
+            <div class="head1">
+                <button onclick="good()">Next &rarr;</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let name = document.getElementById("name").value;
+    let date = document.getElementById("date").value;
+    let email = document.getElementById("email").value;
+    let mob = document.getElementById("mob").value;
+    let sex = document.getElementById("sex").value;
+    let work = document.getElementById("work").value;
+    let idt = document.getElementById("idt").value;
+    let idn = document.getElementById("idn").value;
+    let ia = document.getElementById("ia").value;
+    let id = document.getElementById("id").value;
+    let is = document.getElementById("is").value;
+    let ed = document.getElementById("ed").value;
+
+    function good() {
+        if (name === "" || date === "" || email === "" || mob === "" || sex === "" || work === "" || idt === "" || idn === "" || ia === "" || id === "" || is === "" || ed === "") {
+            // alert("computer form")
+            // return false;
+
+            let name = document.getElementById("name").style.borderColor = "red"
+            let date = document.getElementById("date").style.borderColor = "red"
+            let email = document.getElementById("email").style.borderColor = "red"
+            let mob = document.getElementById("mob").style.borderColor = "red"
+            let sex = document.getElementById("sex").style.borderColor = "red"
+            let work = document.getElementById("work").style.borderColor = "red"
+            let idt = document.getElementById("idt").style.borderColor = "red"
+            let idn = document.getElementById("idn").style.borderColor = "red"
+            let ia = document.getElementById("ia").style.borderColor = "red"
+            let id = document.getElementById("id").style.borderColor = "red"
+            let is = document.getElementById("is").style.borderColor = "red"
+            let ed = document.getElementById("ed").style.borderColor = "red"
+        }
+    }
+
+
+
+</script>
+
+</html>
